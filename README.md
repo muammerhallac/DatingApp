@@ -39,7 +39,7 @@ This project is fully optimised for development environments. So I do not sugges
 * [Asp.Net Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1) - The web framework used for API layer
 * [Angular](https://angular.io/) - For SPA Application 
 * [JWT](https://jwt.io/) - Used for Authentication
-* [SQLite] (https://www.sqlite.org/) - Used for DataLayer
+* [SQLite](https://www.sqlite.org/) - Used for DataLayer
 
 ## Contributing
 
@@ -51,7 +51,7 @@ This project is fully optimised for development environments. So I do not sugges
 
 ## Authors
 
-* **Muammer Hallac** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Muammer Hallac** - *Initial work* - [Muammer Hallac](https://github.com/muammerhallac)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
