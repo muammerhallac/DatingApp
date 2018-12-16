@@ -12,15 +12,22 @@
       </li>
     </ul>
 
-    <form #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
+    <div *ngIf="loggedIn()" class="dropdown">
+        <a class="dropdown-toggle text-light">
+          Welcome User
+        </a>
+      
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Logout</a>
+        </div>
+      </div>
+
+    <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
       <input class="form-control mr-sm-2" name="username" type="text" placeholder="Username" required [(ngModel)]="model.username">
       <input class="form-control mr-sm-2" name="password" type="password" placeholder="Password" required [(ngModel)]="model.password">
       <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
     </form>
 
 </nav>
-
-<pre>
-  Form Valid: {{loginForm.valid}}
-  Form Touched: {{loginForm.touched}}
-</pre>
